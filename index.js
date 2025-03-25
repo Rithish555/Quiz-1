@@ -93,10 +93,6 @@ function questions(){
     ansdiv.className="ansdiv";
     ans[countq].forEach((element,index)=>{
         const isChecked = (anss[countq] === `opts${index}` ? "checked": "");
-        if(isChecked){
-            console.log("hi");
-
-        }
         const radbutt = `<input class="butts" type="radio" name="opts" id="opts${index}" value="opt${index}" ${isChecked}>
                          <label for="opts${index}" class="labelbutts">${element}</label>`
         ansdiv.innerHTML += radbutt;
