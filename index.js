@@ -164,7 +164,6 @@ function storage(){
     namearr=[nameinput.value];
     sessionStorage.setItem("name",JSON.stringify(namearr));
     const playername = JSON.parse(sessionStorage.getItem("name"));
-    console.log(playername[0]);
 }
 
 
